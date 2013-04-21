@@ -1,0 +1,36 @@
+{% extends "pbfinancials/base.html" %}
+
+{% block title %}pbfinancials::Clinic Holiday List{% endblock %}
+
+
+{% block menubar %}
+    <ul>
+        <li><a href="/pbfinancials/clinic/">Clinic Types</a></li>
+        <li><a href="/pbfinancials/clinic/counts/">Clinic Counts</a></li>
+        <li><a href="#" class="current">Clinic Holidays</a></li>
+    </ul>
+{% endblock  %}
+
+{% block content %}
+    <h4>Current Clinic Holiday Listing:</h4>
+    <form method="link" action="">
+        <button type="submit" class="btn-small btn-primary" formaction="/pbfinancials/holiday/add/">Add Holiday</button>
+    </form>
+    {% if holiday_list %}
+        <table id="common">
+            <tr><th>Name</th><th>Date</th></tr>
+            {% for holiday in holiday_list %}
+                {% if forloop.counter|divisibleby:2 %}
+                    <tr class="alt">
+                        {% else %}
+                    <tr>
+                {% endif %}
+            <td><a href="/pbfinancials/holiday/{{ holiday.id }}/">{{ holiday.description}} </a></td>
+            <td>{{ holiday.sHolidayDate }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No Holiday Dates have been entered.</p>
+    {% endif %}
+{% endblock %}

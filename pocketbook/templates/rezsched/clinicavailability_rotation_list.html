@@ -1,0 +1,42 @@
+{% extends "pbfinancials/base.html" %}
+
+{% block title %}pbfinancials::Clinic Availability Listing{% endblock %}
+
+{% block menubar %}
+    <ul xmlns="http://www.w3.org/1999/html">
+        <li><a href="#" class="current">Clinic Availability</a></li>
+     </ul>
+{% endblock  %}
+
+{% block header2 %}
+    <h2><strong>Clinic Setup</strong> </h2>
+{% endblock %}
+
+{% block content %}
+    <h4>Clinic Availability Setup</h4>
+
+    <form method="post" action=".">
+        {% csrf_token %}
+    </form>
+
+    {% if rotationset %}
+        <table id="common">
+            <tr><th>Rotation</th><th>Description</th></tr>
+            {% for rotation in rotationset %}
+                {% if forloop.counter|divisibleby:2 %}
+                    <tr class="alt">
+                        {% else %}
+                    <tr>
+                {% endif %}
+            <td><a href="/pbfinancials/clinicavailability/{{ rotation.id }}/">{{ rotation.code}} </a></td>
+            <td>{{ rotation.rotationName }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No Rotations have been entered.</p>
+    {% endif %}
+    <br>
+
+
+{% endblock %}

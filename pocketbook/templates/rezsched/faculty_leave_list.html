@@ -1,0 +1,36 @@
+{% extends "pbfinancials/base.html" %}
+
+{% block title %}pbfinancials::Faculty Leave{% endblock %}
+
+{% block menubar %}
+    <ul>
+        <li><a href="/pbfinancials/faculty/">Faculty Listing</a></li>
+        <li><a href="/pbfinancials/faculty/add/">Add/Change Faculty</a></li>
+        <li><a href="#" class="current">Faculty Leave</a></li>
+        <li><a href="/pbfinancials/faculty/hours/">Faculty Availability</a></li>
+    </ul>
+{% endblock  %}
+{% block header2 %}
+    <h2><strong>Faculty Setup </strong> </h2>
+{% endblock %}
+{% block content %}
+    <h4>Faculty Leave Listing:</h4>
+
+    {% if facultyset %}
+        <table id="common">
+            <tr><th>Faculty Name</th><th>Faculty Team</th></tr>
+            {% for faculty in facultyset %}
+                {% if forloop.counter|divisibleby:2 %}
+                    <tr class="alt">
+                        {% else %}
+                    <tr>
+                {% endif %}
+            <td><a href="/pbfinancials/faculty/leave/{{ faculty.id }}/">{{ faculty.lastName }}, {{faculty.firstName }} </a></td>
+            <td>{{ faculty.facultyTeam }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No Faculty members have been entered.</p>
+    {% endif %}
+{% endblock %}

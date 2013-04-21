@@ -1,0 +1,44 @@
+{% extends "pbfinancials/orgsetupbase.html" %}
+
+{% block academiccurrent %}{% endblock %}
+{% block generalcurrent %}{% endblock %}
+{% block schedulecurrent %}{% endblock %}
+{% block rotationcurrent %}class="current"{% endblock %}
+{% block sessioncurrent %}{% endblock %}
+{% block leavecurrent %}{% endblock %}
+
+{% block header2 %}
+    <h2><strong>Academic Year Setup </strong> </h2>
+{% endblock %}
+
+{% block content %}
+    <h4>Current Rotation Listing:</h4>
+
+    <form method="post" action=".">
+        {% csrf_token %}
+        <button type="submit" class="btn-small btn-primary" formaction="/pbfinancials/orgyear/rotation/add/">Add New</button>
+        <button type="submit" class="btn-small btn-primary" formaction="/pbfinancials/orgyear/">Return/Cancel</button>
+    </form>
+
+    {% if orgyearrotationsetup_list %}
+        <table id="common">
+            <tr><th>Code</th><th>Description</th></tr>
+            {% for rotation in orgyearrotationsetup_list %}
+                {% if forloop.counter|divisibleby:2 %}
+                    <tr class="alt">
+                        {% else %}
+                    <tr>
+                {% endif %}
+            <td><a href="/pbfinancials/orgyear/rotation/{{ rotation.id }}/">{{ rotation.code}} </a></td>
+            <td>{{ rotation.rotationName }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No Rotations have been entered.</p>
+    {% endif %}
+    <br>
+
+
+{% endblock %}
+

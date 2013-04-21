@@ -1,0 +1,34 @@
+{% extends "pbfinancials/base.html" %}
+
+{% block title %}pbfinancials::Organizational Setup{% endblock %}
+
+{% block menubar %}
+    <ul>
+        <li><a href="/pbfinancials/orgyear/" {% block academiccurrent %}class="current"{% endblock %}>Academic Year</a></li>
+        <li><a href="/pbfinancials/orgyear/team/" {% block generalcurrent %}{% endblock %}>Teams</a></li>
+        <li><a href="/pbfinancials/orgyear/schedule/" {% block schedulecurrent %}{% endblock %}>Schedules</a></li>
+        <li><a href="/pbfinancials/orgyear/rotation/" {% block rotationcurrent %}{% endblock %}>Rotations</a></li>
+        <li><a href="/pbfinancials/orgyear/session/" {% block sessioncurrent %}{% endblock %}>Sessions</a></li>
+        <li><a href="/pbfinancials/orgyear/leave/" {% block leavecurrent %}{% endblock %}>Leave Types</a></li>
+    </ul>
+{% endblock  %}
+
+{% block header2 %}
+    <h2><strong>Academic Year Setup </strong> </h2>
+{% endblock %}
+
+{% block content %}
+
+    <p><h4> {% block header4 %}Modify Object Info{% endblock %}</h4>
+
+    <form method="post" action=".">
+
+        {% csrf_token  %}
+        <table id="entry-form">
+            {{ form.as_table }}
+        </table>
+        <br>
+        <button type="submit" class="btn-small btn-primary">Save Changes</button>
+        <button type="reset" class="btn-small">Reset Fields</button>
+    </form>
+{% endblock %}

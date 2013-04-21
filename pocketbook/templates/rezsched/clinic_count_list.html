@@ -1,0 +1,44 @@
+{% extends "pbfinancials/base.html" %}
+
+{% block title %}pbfinancials::Clinic Count List{% endblock %}
+
+{% block menubar %}
+    <ul xmlns="http://www.w3.org/1999/html">
+        <li><a href="/pbfinancials/clinic/">Clinic Types</a></li>
+        <li><a href="#" class="current">Clinic Counts</a></li>
+        <li><a href="/pbfinancials/clinic/holiday/">Clinic Holidays</a></li>
+    </ul>
+{% endblock  %}
+
+{% block header2 %}
+    <h2><strong>Clinic Setup</strong> </h2>
+{% endblock %}
+
+{% block content %}
+    <h4>Clinic Block Count Setup</h4>
+
+    <form method="post" action=".">
+        {% csrf_token %}
+    </form>
+
+    {% if blockset %}
+        <table id="common">
+            <tr><th>Schedule Block</th><th>Description</th></tr>
+            {% for block in blockset %}
+                {% if forloop.counter|divisibleby:2 %}
+                    <tr class="alt">
+                        {% else %}
+                    <tr>
+                {% endif %}
+            <td><a href="/pbfinancials/clinic/counts/{{ block.id }}/">{{ block.code}} </a></td>
+            <td>{{ block.description }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No Rotations have been entered.</p>
+    {% endif %}
+    <br>
+
+
+{% endblock %}

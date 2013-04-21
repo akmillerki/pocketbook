@@ -1,0 +1,19 @@
+{% extends "pbfinancials/baseentry.html" %}
+
+{% block title %}pbfinancials::Clinic Schedule Type Data Entry{% endblock %}
+
+
+{% block menubar %}
+    <ul>
+        <li><a href="#" class="current">Clinic Types</a></li>
+        <li><a href="/pbfinancials/clinic/counts/">Clinic Counts</a></li>
+        <li><a href="/pbfinancials/clinic/holiday/">Clinic Holidays</a></li>
+    </ul>
+{% endblock  %}
+
+{% block header4 %} Modify Clinic Schedule Types {% endblock  %}
+{% block deletebutton %}
+    <button type="submit" class="btn-small btn-primary" formaction="delete/">Delete Clinic Type</button>
+    <br><br>
+{% endblock %}
+

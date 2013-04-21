@@ -1,0 +1,37 @@
+{% extends "pbfinancials/base.html" %}
+
+{% block title %}pbfinancials::Clinic Type List{% endblock %}
+
+{% block menubar %}
+    <ul>
+        <li><a href="#" class="current">Clinic Types</a></li>
+        <li><a href="/pbfinancials/clinic/counts/">Clinic Counts</a></li>
+        <li><a href="/pbfinancials/clinic/holiday/">Clinic Holidays</a></li>
+    </ul>
+{% endblock  %}
+{% block header2 %}
+    <h2><strong>Clinic Type Information </strong> </h2>
+{% endblock %}
+{% block content %}
+    <h4>Current Clinic Type Listing:</h4>
+    <form method="link" action="">
+        <button type="submit" class="btn-small btn-primary" formaction="/pbfinancials/clinic/type/add/">Add Clinic Type</button>
+    </form>
+    {% if clinicscheduletype_list %}
+        <table id="common">
+            <tr><th>Clinic Type Code</th><th>Clinic Type Description</th></tr>
+            {% for clinicschedule in clinicscheduletype_list %}
+                {% if forloop.counter|divisibleby:2 %}
+                    <tr class="alt">
+                        {% else %}
+                    <tr>
+                {% endif %}
+            <td><a href="/pbfinancials/clinic/type/{{ clinicschedule.id }}/">{{ clinicschedule.scheduleType }} </a></td>
+            <td>{{ clinicschedule.scheduleTypeDescr }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No Clinic Session Types have been entered.</p>
+    {% endif %}
+{% endblock %}

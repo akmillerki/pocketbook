@@ -1,0 +1,46 @@
+{% extends "pbfinancials/base.html" %}
+
+{% block title %}pbfinancials::Review Clinic Schedules{% endblock %}
+
+{% block menubar %}
+    <ul>
+        <li><a href="#">Yearly Setup</a></li>
+        <li><a href="#" class="current">Clinic Schedule</a></li>
+        <li><a href="#">Rotation Schedule</a></li>
+    </ul>
+{% endblock  %}
+{% block header2 %}
+    <h2><strong>Review Clinic Schedules </strong> </h2>
+{% endblock %}
+
+{% if dispFormError %}
+    <p>{{ dispFormError }}</p>
+{% endif %}
+
+{% block content %}
+    <h4>Select Clinic Schedule Options:</h4>
+    <form method='post'>
+        {% if cabwformset %}
+            {{ cabwformset.management_form }}
+            {% for form in cabwformset %}
+                {{ form.id }}
+                {% csrf_token %}
+                {% if forloop.counter == 1 %}
+                    <table id="common">
+                        <tr><th>Schedule Block</th><th>Week</th></tr>
+
+                        <tr>
+                            <td>{{ form.blockRef }}</td><td>{{ form.week }}</td>
+                        </tr>
+
+                    </table>
+                    <br>
+                    <button type="submit" name="submit" class="btn-small btn-primary">Review</button>
+
+                {% endif %}
+            {% endfor %}
+            </form>
+        {% else %}
+            <p>An Error has occurred.</p>
+        {% endif %}
+{% endblock %}

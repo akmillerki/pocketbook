@@ -1,2 +1,2 @@
-SELECT * FROM healthficiency.clinicschedulework
+SELECT * FROM pocketbook.clinicschedulework
 WHERE 

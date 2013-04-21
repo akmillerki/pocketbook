@@ -1,0 +1,37 @@
+{% extends "pbfinancials/base.html" %}
+
+{% block title %}pbfinancials::Resident Leave{% endblock %}
+
+{% block menubar %}
+    <ul>
+        <li><a href="/pbfinancials/resident/type/">Resident Types</a></li>
+        <li><a href="/pbfinancials/resident/add/">Resident Information</a></li>
+        <li><a href="#" class="current">Resident Leave</a></li>
+    </ul>
+{% endblock  %}
+{% block header2 %}
+    <h2><strong>Resident Setup </strong> </h2>
+{% endblock %}
+{% block content %}
+    <h4>Resident Leave Listing:</h4>
+
+    {% if residentset %}
+        <table id="common">
+            <tr><th>Resident Name</th><th>Resident Team</th><th>Resident Type</th></tr>
+            {% for resident in residentset %}
+                {% if forloop.counter|divisibleby:2 %}
+                    <tr class="alt">
+                        {% else %}
+                    <tr>
+                {% endif %}
+            <td><a href="/pbfinancials/resident/leave/{{ resident.id }}/">{{ resident.lastName }}, {{resident.firstName }} </a></td>
+            <td>{{ resident.residentTeam }}</td>
+            <td> {{ resident.residentYear }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No Residents have been entered.</p>
+    {% endif %}
+{% endblock %}
+

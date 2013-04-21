@@ -1,0 +1,76 @@
+{% extends "pbfinancials/base.html" %}
+{% block title %}pbfinancials::Review Schedules{% endblock %}
+
+{% block menubar %}
+    <ul>
+        <li><a href="#">Yearly Setup</a></li>
+        <li><a href="#" class="current">Clinic Schedule</a></li>
+        <li><a href="#">Rotation Schedule</a></li>
+    </ul>
+{% endblock  %}
+    {% block header2 %}
+        <h2>Review Clinic Schedules</h2>
+    {% endblock %}
+
+{% block content %}
+
+    {% if blockDisp  %}
+        <h4>Block: {{ blockDisp }}
+    {% endif %}
+    &nbsp;
+    {% if weekDisp  %}
+        Week: {{ weekDisp }}</h4>
+    {% endif %}
+    {% if beginDisp  %}
+        <h4>From Date: {{ beginDisp }}
+    {% endif %}
+    &nbsp;
+    {% if endDisp  %}
+        to {{ endDisp }}</h4>
+    {% endif %}
+    {% if items %}
+    <br>
+        <table id="common">
+            <tr><th>Resident</th><th>Rotation</th><th>Team</th><th>MON-AM</th><th>MON-PM</th>
+                <th>TUE-AM</th><th>TUE-PM</th><th>WED-AM</th><th>WED-PM</th><th>THU-AM</th><th>THU-PM</th><th>FRI-AM</th><th>FRI-PM</th></tr>
+            {% for item in items %}
+                {% if forloop.counter|divisibleby:2 %}
+                    <tr class="alt">
+                        {% else %}
+                    <tr>
+                {% endif %}
+                {% if item.id == 0 %}
+                    <td colspan=3>    {{ item.name }}   </td>
+                    <td>{{ item.monAM }}</td> <td>{{ item.monPM }}</td>
+                    <td>{{ item.tueAM }}</td> <td>{{ item.tuePM }}</td>
+                    <td>{{ item.wedAM }}</td> <td>{{ item.wedPM }}</td>
+                    <td>{{ item.thuAM }}</td> <td>{{ item.thuPM }}</td>
+                    <td>{{ item.friAM }}</td> <td>{{ item.friPM }}</td>
+                {% elif item.id == -1 %}
+                    <td colspan=3>    {{ item.name }}   </td>
+                    <td>{{ item.monAM }}</td> <td>{{ item.monPM }}</td>
+                    <td>{{ item.tueAM }}</td> <td>{{ item.tuePM }}</td>
+                    <td>{{ item.wedAM }}</td> <td>{{ item.wedPM }}</td>
+                    <td>{{ item.thuAM }}</td> <td>{{ item.thuPM }}</td>
+                    <td>{{ item.friAM }}</td> <td>{{ item.friPM }}</td>
+                {% else %}
+                    <td>{{ item.name }}</td><td>{{ item.rotation}}</td>
+                    <td>{{ item.team }}</td>
+                    {% if item.monAM == 'E' or item.monAM == 'F' %} <td>{{ item.monAM }}</td> {% else %}<td>-</td>{% endif %}
+                    {% if item.monPM == 'E' or item.monPM == 'F' %} <td>{{ item.monPM }}</td> {% else %}<td>-</td>{% endif %}
+                    {% if item.tueAM == 'E' or item.tueAM == 'F' %} <td>{{ item.tueAM }}</td> {% else %}<td>-</td>{% endif %}
+                    {% if item.tuePM == 'E' or item.tuePM == 'F' %} <td>{{ item.tuePM }}</td> {% else %}<td>-</td>{% endif %}
+                    {% if item.wedAM == 'E' or item.wedAM == 'F' %} <td>{{ item.wedAM }}</td> {% else %}<td>-</td>{% endif %}
+                    {% if item.wedPM == 'E' or item.wedPM == 'F' %} <td>{{ item.wedPM }}</td> {% else %}<td>-</td>{% endif %}
+                    {% if item.thuAM == 'E' or item.thuAM == 'F' %} <td>{{ item.thuAM }}</td> {% else %}<td>-</td>{% endif %}
+                    {% if item.thuPM == 'E' or item.thuPM == 'F' %} <td>{{ item.thuPM }}</td> {% else %}<td>-</td>{% endif %}
+                    {% if item.friAM == 'E' or item.friAM == 'F' %} <td>{{ item.friAM }}</td> {% else %}<td>-</td>{% endif %}
+                    {% if item.friPM == 'E' or item.friPM == 'F' %} <td>{{ item.friPM }}</td> {% else %}<td>-</td>{% endif %}
+                {% endif %}
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>There are no schedules generated for the block and week you have selected, please generate the schedules and then return to review them.</p>
+    {% endif %}
+{% endblock %}

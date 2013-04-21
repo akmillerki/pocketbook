@@ -1,0 +1,44 @@
+{% extends "pbfinancials/base.html" %}
+
+{% block title %}pbfinancials::Faculty Clinic Availability Listing{% endblock %}
+
+{% block menubar %}
+    <ul xmlns="http://www.w3.org/1999/html">
+        <li><a href="/pbfinancials/faculty/">Faculty Listing</a></li>
+        <li><a href="/pbfinancials/faculty/add/">Add/Change Faculty</a></li>
+        <li><a href="/pbfinancials/faculty/leave/">Faculty Leave</a></li>
+        <li><a href="#" class="current">Faculty Availability</a></li>
+     </ul>
+{% endblock  %}
+
+{% block header2 %}
+    <h2><strong>Faculty Setup</strong> </h2>
+{% endblock %}
+
+{% block content %}
+    <h4>Faculty Clinic Hours Setup</h4>
+
+    <form method="post" action=".">
+        {% csrf_token %}
+    </form>
+
+    {% if facultyset %}
+        <table id="common">
+            <tr><th>Faculty Name</th></tr>
+            {% for faculty in facultyset %}
+                {% if forloop.counter|divisibleby:2 %}
+                    <tr class="alt">
+                        {% else %}
+                    <tr>
+                {% endif %}
+            <td><a href="/pbfinancials/faculty/hours/{{ faculty.id }}/">{{ faculty.lastName}} , {{ faculty.firstName }} </a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No Faculty have been entered.</p>
+    {% endif %}
+    <br>
+
+
+{% endblock %}

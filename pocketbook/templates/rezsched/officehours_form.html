@@ -1,0 +1,33 @@
+{% extends "pbfinancials/orgsetupentry.html" %}
+
+
+
+{% block title %}pbfinancials::Office Hours Data Entry{% endblock %}
+{% block jsquery-dates %}
+    <script>
+        $(function() {
+            $('#id_sTimeBeg').timepicker({
+                showPeriod: false,
+                showLeadingZero: true
+            });
+        });
+    </script>
+    <script>
+        $(function() {
+            $('#id_sTimeEnd').timepicker({
+                showPeriod: false,
+                showLeadingZero: true
+            });
+        });
+    </script>
+
+{% endblock  %}
+
+{% block academiccurrent %}{% endblock %}
+{% block generalcurrent %}{% endblock %}
+{% block schedulecurrent %}{% endblock %}
+{% block rotationcurrent %}{% endblock %}
+{% block sessioncurrent %}class="current"{% endblock %}
+{% block leavecurrent %}{% endblock %}
+
+{% block header4 %} Modify Office Hours Info {% endblock  %}

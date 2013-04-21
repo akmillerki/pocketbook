@@ -1,0 +1,42 @@
+{% extends "pbfinancials/orgsetupbase.html" %}
+
+{% block academiccurrent %}{% endblock %}
+{% block generalcurrent %}{% endblock %}
+{% block schedulecurrent %}{% endblock %}
+{% block rotationcurrent %}{% endblock %}
+{% block sessioncurrent %}class="current"{% endblock %}
+{% block leavecurrent %}{% endblock %}
+
+{% block header2 %}
+    <h2><strong>Organizational Setup </strong> </h2>
+{% endblock %}
+
+{% block content %}
+    <h4>Current Office Hour Session Listing:</h4>
+
+    <form method="post" action=".">
+        {% csrf_token %}
+        <button type="submit" class="btn-small btn-primary" formaction="/pbfinancials/orgyear/session/add/">Add New</button>
+        <button type="submit" class="btn-small btn-primary" formaction="/pbfinancials/orgyear/">Return/Cancel</button>
+    </form>
+    {% if orgyearsessionsetup_list %}
+        <table id="common">
+            <tr><th>Session Day and Period</th><th>Session Start</th><th>Session End</th></tr>
+            {% for session in orgyearsessionsetup_list %}
+                {% if forloop.counter|divisibleby:2 %}
+                    <tr class="alt">
+                        {% else %}
+                    <tr>
+                {% endif %}
+            <td><a href="/pbfinancials/orgyear/session/{{ session.id }}/">{{ session.get_weekday_display }} {{ session.period }} </a></td>
+            <td>{{ session.sTimeBeg }}</td>
+            <td>{{ session.sTimeEnd }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No Teams have been entered.</p>
+    {% endif %}
+
+
+{% endblock %}

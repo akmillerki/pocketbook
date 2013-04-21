@@ -1,0 +1,96 @@
+{% extends "pbfinancials/baseentry.html" %}
+{% block title %}pbfinancials::Clinic Count Entry{% endblock %}
+{% block jsquery-inline %}
+    <script type="text/javascript">
+        $(function() {
+            $('#clinicCount tbody tr').formset({
+                prefix: '{{ formset.prefix }}'
+            });
+        })
+    </script>
+
+{% endblock %}
+{{ resformset.media }}
+{% block menubar %}
+    <ul xmlns="http://www.w3.org/1999/html">
+        <li><a href="/pbfinancials/clinic/">Clinic Types</a></li>
+        <li><a href="#" class="current">Clinic Counts</a></li>
+        <li><a href="/pbfinancials/clinic/holiday/">Clinic Holidays</a></li>
+    </ul>
+{% endblock  %}
+{% block header2 %}
+    <h2><strong>Clinic Setup</strong> </h2>
+{% endblock %}
+{% block content %}
+    <form id="clinicCount" method="post" action="">
+        {% csrf_token %}
+
+        {% if dispContext %}
+            <h4> Schedule Block:  {{ dispContext }} </h4>
+
+        {% endif %}
+        {% if formset %}
+            {{ formset.management_form }}
+
+            {% if dispSaveError %}
+                <p>{{ dispSaveError }}</p>
+            {% endif %}
+
+            {% if count <= 5 %}
+
+                <button type="submit" name="submit" class="btn-small btn-primary">Save Changes and Return</button>
+                <button type="submit" name="cancel" class="btn-small btn-primary">Cancel and Return</button>
+                <br>
+                <br>
+            {% endif %}
+
+
+            <table id="common">
+
+                {% for form in formset %}
+                    {{ form.id }}
+                    {% csrf_token %}
+                    <tr>
+                        {% if forloop.counter == 1 %}
+                            {% for field in form %}
+                                {% if field.name == 'residentTypeRef' or field.name == 'minSession' or field.name == 'maxSession' or field.name == 'ptsSession' %}
+                                    <th>{{ field.label_tag }}</th>
+                                {% endif %}
+                                {% if field.name == 'organization' or field.name == 'organizationYear'  %}
+                                    <th>{{ field.label_tag }}</th>
+                                {% endif %}
+                            {% endfor %}
+                            <th>Delete</th>
+                        {% endif %}
+
+                    </tr>
+                {% endfor %}
+                {% for form in formset %}
+                    {{ form.id }}
+                    <tbody>
+                    <tr>
+                        {% for field in form %}
+                            {% if field.name == 'residentTypeRef' or field.name == 'minSession' or field.name == 'maxSession' or field.name == 'ptsSession'  %}
+                                <td>{{ field }}</td>
+                            {% endif %}
+
+                            {% if field.name == 'organization' or field.name == 'organizationYear' %}
+                                <td>{{ field }}</td>
+                            {% endif %}
+
+                        {% endfor %}
+                        <td>{% if form.instance.pk %}{{ form.DELETE }}{% endif %}</td>
+                    </tr>
+                    </tbody>
+                {% endfor %}
+            </table>
+            {% if count > 5 %}
+                <br>
+                <button type="submit" name="submit" class="btn-small btn-primary">Save Changes and Return</button>
+                <button type="submit" name="cancel" class="btn-small btn-primary">Cancel and Return</button>
+            {% endif %}
+        {% endif %}
+        <br>
+
+    </form>
+{% endblock %}

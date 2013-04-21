@@ -1,0 +1,44 @@
+{% extends "pbfinancials/base.html" %}
+
+{% block title %}pbfinancials::Rotation Listing{% endblock %}
+
+{% block menubar %}
+    <ul xmlns="http://www.w3.org/1999/html">
+        <li><a href="/pbfinancials/rotation/schedule/">By Schedule</a></li>
+        <li><a href="/pbfinancials/rotation/schedule/resident/">By Resident</a></li>
+    </ul>
+{% endblock  %}
+
+{% block header2 %}
+    <h2><strong>Rotation Schedule Setup </strong> </h2>
+{% endblock %}
+
+{% block content %}
+    <h4>Search Rotation Schedule By Schedule Block:</h4>
+
+    <form method="post" action=".">
+        {% csrf_token %}
+    </form>
+
+    {% if rotationset %}
+        <table id="common">
+            <tr><th>Rotation</th><th>Description</th></tr>
+            {% for rotation in rotationset %}
+                {% if forloop.counter|divisibleby:2 %}
+                    <tr class="alt">
+                        {% else %}
+                    <tr>
+                {% endif %}
+            <td><a href="/pbfinancials/rotation/schedule/rotation/{{ rotation.id }}/">{{ rotation.code}} </a></td>
+            <td>{{ rotation.rotationName }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No Rotations have been entered.</p>
+    {% endif %}
+    <br>
+
+
+{% endblock %}
+

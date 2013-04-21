@@ -1,0 +1,33 @@
+{% extends "pbfinancials/base.html" %}
+
+{% block title %}pbfinancials::Faculty List{% endblock %}
+
+{% block menubar %}
+    <ul>
+        <li><a href="/pbfinancials/faculty/">Faculty Listing</a></li>
+        <li><a href="/pbfinancials/faculty/add/">Add/Change Faculty</a></li>
+        <li><a href="/pbfinancials/faculty/custom/"  class="current">Faculty Rounds</a></li>
+        <li><a href="/pbfinancials/faculty/leave/">Faculty Leave</a></li>
+    </ul>
+{% endblock  %}
+
+{% block content %}
+    <h4>Current Faculty Listing:</h4>
+    {% if facultyrounding_list %}
+        <table id="common">
+            <tr><th>Faculty Name</th><th>Faculty Team</th></tr>
+            {% for faculty in facultyrounding_list %}
+                {% if forloop.counter|divisibleby:2 %}
+                    <tr class="alt">
+                        {% else %}
+                    <tr>
+                {% endif %}
+            <td><a href="/pbfinancials/faculty/{{ faculty.id }}/">{{ faculty.lastName }}, {{faculty.firstName }} </a></td>
+            <td>{{ faculty.facultyTeam }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No Faculty have been entered.</p>
+    {% endif %}
+{% endblock %}

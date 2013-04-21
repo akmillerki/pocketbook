@@ -1,0 +1,46 @@
+{% extends "pbfinancials/orgsetupbase.html" %}
+
+{% block academiccurrent %}{% endblock %}
+{% block generalcurrent %}{% endblock %}
+{% block schedulecurrent %}{% endblock %}
+{% block rotationcurrent %}{% endblock %}
+{% block sessioncurrent %}{% endblock %}
+{% block leavecurrent %}class="current"{% endblock %}
+
+{% block header2 %}
+    <h2><strong>Academic Year Setup </strong> </h2>
+{% endblock %}
+
+{% block content %}
+    <h4>Current Leave/Out of Office Listing:</h4>
+
+    <form method="post" action=".">
+        {% csrf_token %}
+        <button type="submit" class="btn-small btn-primary" formaction="/pbfinancials/orgyear/leave/add/">Add New</button>
+        <button type="submit" class="btn-small btn-primary" formaction="/pbfinancials/orgyear/">Return/Cancel</button>
+    </form>
+
+    {% if orgyearleavesetup_list %}
+        <table id="common">
+            <tr><th>Leave Type</th><th>Description</th></tr>
+            {% for leave in orgyearleavesetup_list %}
+                {% if forloop.counter|divisibleby:2 %}
+                    <tr class="alt">
+                        {% else %}
+                    <tr>
+                {% endif %}
+            <td><a href="/pbfinancials/orgyear/leave/{{ leave.id }}/">{{ leave.shortDesc}} </a></td>
+            <td>{{ leave.description }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No Leave/Unavailable types have been entered.</p>
+    {% endif %}
+    <br>
+
+
+{% endblock %}
+
+
+

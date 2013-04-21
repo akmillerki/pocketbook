@@ -1,0 +1,101 @@
+{% extends "pbfinancials/orgsetupentry.html" %}
+{% block title %}pbfinancials::Rotation Setup {% endblock %}
+{% block jsquery-inline %}
+    <script type="text/javascript">
+        $(function() {
+            $('#rotationtype tbody tr').formset({
+                prefix: '{{ formset.prefix }}', added: 'returnRow'
+            });
+        })
+    </script>
+
+{% endblock %}
+{% block academiccurrent %}{% endblock %}
+{% block generalcurrent %}{% endblock %}
+{% block schedulecurrent %}{% endblock %}
+{% block rotationcurrent %}class="current"{% endblock %}
+{% block sessioncurrent %}{% endblock %}
+{% block leavecurrent %}{% endblock %}
+{% block header2 %}
+    <h2><strong>Academic Year Setup</strong> </h2>
+{% endblock %}
+{% block content %}
+    {% if dispContext %}
+        <h4> Rotation:  {{ dispContext }} </h4>
+
+    {% endif %}
+
+    {% if dispSaveError %}
+        <p>{{ dispSaveError }}</p>
+    {% endif %}
+
+    <form id="rotationtype" method="post" action="">
+        {{ rotFormset.management_form }}
+        {% if rotFormset %}
+            <table id="common">
+                {% for rform in rotFormset %}
+                    {{ rform.id  }}
+                    {% csrf_token %}
+                    {% for field in rform %}
+                        {% if field.name == 'rotationName' or field.name == 'code' %}
+                            <thead>
+                                <tr><th>{{ field.label_tag }}</th><td>{{ field }}</td></tr>
+                            </thead>
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
+            </table>
+            <br>
+        {% endif %}
+        {{ formset.management_form }}
+        {% if formset %}
+            <table id="common">
+                {% if count <= 5 %}
+
+                    <button type="submit" name="submit" class="btn-small btn-primary">Save Changes and Return</button>
+                    <button type="submit" name="cancel" class="btn-small btn-primary">Cancel and Return</button>
+                    <br>
+                    <br>
+                {% endif %}
+                {% for form in formset %}
+                    {{ form.id }}
+                    {% csrf_token %}
+                    <tr>
+                        {% if forloop.counter == 1 %}
+                            {% for field in form %}
+                                {% if field.name == 'residentTypeRef' or field.name == 'pgyRotation' or field.name == 'pgyElective' or field.name == 'organization' or field.name == 'organizationYear' %}
+                                    <th>{{ field.label_tag }}</th>
+                                {% endif %}
+
+                            {% endfor %}
+                            <th>Delete</th>
+                        {% endif %}
+
+                    </tr>
+                {% endfor %}
+                {% for form in formset %}
+                    <tbody>
+                    <tr>
+                        {% for field in form %}
+                            {% if field.name == 'residentTypeRef' or field.name == 'pgyRotation' or field.name == 'pgyElective' or field.name == 'organization' or field.name == 'organizationYear'  %}
+                                <td>{{ field }}</td>
+                            {% endif %}
+                            {% if field.name == 'rotationRef'  %}
+                                {{ field }}
+                            {% endif %}
+                        {% endfor %}
+                        <td>{% if form.instance.pk %}{{ form.DELETE }}{% endif %}</td>
+                    </tr>
+                    </tbody>
+                {% endfor %}
+            </table>
+            {% if count > 5 %}
+                <br>
+                <button type="submit" name="submit" class="btn-small btn-primary">Save Changes and Return</button>
+                <button type="submit" name="cancel" class="btn-small btn-primary">Cancel and Return</button>
+            {% endif %}
+        {% endif %}
+        <br>
+
+    </form>
+{% endblock %}
