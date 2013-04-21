@@ -5,7 +5,7 @@ from django.views.generic import ListView, UpdateView
 from django.contrib import admin
 from pbfinancials.models import Resident, OrganizationYear, Block, Rotation, OfficeHours, Holiday, Faculty, \
     UnavailableType, ClinicAvailability, TeamType, ResidentType, ClinicScheduleType, BlockResidentTypeCount, \
-    RotationSchedule, FacultyClinicHours
+    RotationSchedule, FacultyClinicHours, Account, Transaction
 from pocketbook import settings
 from services import UserOrganization, UserOrganizationYear
 from pbfinancials.views import ResidentCreate, ResidentUpdate, ResidentDelete, OrganizationYearCreate, OrganizationYearUpdate, OrganizationYearDelete, \
@@ -13,7 +13,7 @@ from pbfinancials.views import ResidentCreate, ResidentUpdate, ResidentDelete, O
     HolidayUpdate, HolidayDelete, FacultyCreate, FacultyUpdate, FacultyDelete, UnavailableTypeCreate, UnavailableTypeUpdate, UnavailableTypeDelete, ClinicAvailabilityCreate, \
     ClinicAvailabilityUpdate, ClinicAvailabilityDelete, TeamTypeCreate, TeamTypeDelete, TeamTypeUpdate, ResidentTypeCreate, ResidentTypeUpdate, \
     ClinicScheduleTypeUpdate, ClinicScheduleTypeDelete, ClinicScheduleTypeCreate, BlockResidentTypeCountCreate, BlockResidentTypeCountUpdate, \
-    RotationScheduleCreate, RotationScheduleUpdate, RotationScheduleDelete
+    RotationScheduleCreate, RotationScheduleUpdate, RotationScheduleDelete, AccountCreate, AccountDelete, AccountUpdate
 
 
 admin.autodiscover()
@@ -29,6 +29,15 @@ urlpatterns = patterns('',
      #{'document_root': settings.STATIC_ROOT, 'show_indexes': True}),
     # residents
     #url(r'^login/$')
+    url(r'^account/$',
+        ListView.as_view(
+            queryset=Account.objects.filter().order_by('accountName')[:20],
+            context_object_name='account_list'),
+        name='account-list'),
+    url(r'^account/add/$', AccountCreate.as_view(), name='account-add'),
+    url(r'^account/(?P<pk>\d+)/$', AccountUpdate.as_view(), name = 'account-update'),
+    url(r'^account/(?P<pk>\d+)/delete/$', AccountDelete.as_view(), name = 'account-delete'),
+
     url(r'^resident/$',
         ListView.as_view(
             queryset=Resident.objects.filter(organization__exact=userOrg, organizationYear__exact=userOrgYear).order_by('lastName')[:20],

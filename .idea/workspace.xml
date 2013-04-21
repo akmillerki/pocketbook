@@ -2,210 +2,105 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38877b82-d31f-436c-97a1-6558bddc294b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Google_App_Engine_SDK.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/other.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/pocketbook.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/testrunner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/settings.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/admin/base_site.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/admin/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/base.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/home.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/backup_html/backup2_sched_setup.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/backup_html/backup_block_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/backup_html/backup_rotation_setup.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/backup_html/backup_sched_setup.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/base.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/baseentry.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/block_custom.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/block_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/block_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/block_type.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/block_type_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/blockresidenttypecount_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/blockresidenttypecount_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/clinic_count.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/clinic_count_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/clinic_schedule_run.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/clinicavailability_custom.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/clinicavailability_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/clinicavailability_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/clinicavailability_rotation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/clinicavailability_rotation_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/clinicscheduletype_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/clinicscheduletype_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/faculty_custom.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/faculty_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/faculty_leave.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/faculty_leave_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/faculty_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/facultyclinichours.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/facultyclinichours_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/facultyrounding_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/generateSchedules.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/generateSchedulesAll.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/holiday_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/holiday_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/home.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/leave_setup.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/officehours_custom.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/officehours_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/officehours_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/organizationyear_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/organizationyear_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/orgsetupbase.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/orgsetupentry.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/orgyear_rotation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/resident_custom.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/resident_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/resident_leave.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/resident_leave_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/resident_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/residenttype_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/residenttype_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/reviewSchedules.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/review_schedule_run.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/rotation_custom.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/rotation_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/rotation_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/rotation_schedule_block.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/rotation_schedule_resident.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/rotation_schedule_rotation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/rotation_setup.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/rotation_type.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/rotation_type_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/rotationschedule_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/rotationschedule_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/rotationschedule_resident_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/rotationschedule_rotation_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/sched_setup.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/session_setup.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/team_setup.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/teamtype_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/teamtype_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/unavailabletype_custom.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/unavailabletype_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/templates/rezsched/unavailabletype_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/views.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/healthficiency/wsgi.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rezsched/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rezsched/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rezsched/forms.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rezsched/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rezsched/services.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rezsched/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rezsched/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rezsched/utils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rezsched/utils_backup.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rezsched/views.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.yaml" afterPath="$PROJECT_DIR$/app.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/other/sql/bbbb.sql" afterPath="$PROJECT_DIR$/other/sql/bbbb.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/other/sql/bbbbbb.sql" afterPath="$PROJECT_DIR$/other/sql/bbbbbb.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/other/sql/insertBaseOrganizationsql-v2.sql" afterPath="$PROJECT_DIR$/other/sql/insertBaseOrganizationsql-v2.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/other/sql/insertBaseOrganizationsql.sql" afterPath="$PROJECT_DIR$/other/sql/insertBaseOrganizationsql.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/other/sql/insertBaseRotation.sql" afterPath="$PROJECT_DIR$/other/sql/insertBaseRotation.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/other/sql/insertBlocks.sql" afterPath="$PROJECT_DIR$/other/sql/insertBlocks.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/other/templates/insertInto.csv" afterPath="$PROJECT_DIR$/other/templates/insertInto.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/account_form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/account_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/backup_html/backup2_sched_setup.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/backup_html/backup2_sched_setup.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/backup_html/backup_block_list.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/backup_html/backup_block_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/backup_html/backup_rotation_setup.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/backup_html/backup_rotation_setup.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/backup_html/backup_sched_setup.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/backup_html/backup_sched_setup.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/base.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/base.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/baseentry.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/baseentry.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/block_custom.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/block_custom.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/block_form.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/block_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/block_list.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/block_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/block_type.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/block_type.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/block_type_list.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/block_type_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/blockresidenttypecount_form.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/blockresidenttypecount_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/blockresidenttypecount_list.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/blockresidenttypecount_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/clinic_count.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/clinic_count.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/clinic_count_list.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/clinic_count_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/clinic_schedule_run.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/clinic_schedule_run.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/clinicavailability_custom.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/clinicavailability_custom.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/clinicavailability_form.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/clinicavailability_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/clinicavailability_list.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/clinicavailability_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/clinicavailability_rotation.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/clinicavailability_rotation.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/clinicavailability_rotation_list.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/clinicavailability_rotation_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/clinicscheduletype_form.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/clinicscheduletype_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/clinicscheduletype_list.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/clinicscheduletype_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/faculty_custom.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/faculty_custom.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/faculty_form.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/faculty_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/faculty_leave.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/faculty_leave.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/faculty_leave_list.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/faculty_leave_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/faculty_list.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/faculty_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/facultyclinichours.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/facultyclinichours.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/facultyclinichours_list.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/facultyclinichours_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/facultyrounding_list.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/facultyrounding_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/generateSchedules.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/generateSchedules.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/generateSchedulesAll.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/generateSchedulesAll.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/holiday_form.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/holiday_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/holiday_list.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/holiday_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/home.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/home.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/leave_setup.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/leave_setup.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/officehours_custom.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/officehours_custom.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/officehours_form.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/officehours_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/officehours_list.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/officehours_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/organizationyear_form.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/organizationyear_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/organizationyear_list.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/organizationyear_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/orgsetupbase.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/orgsetupbase.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/orgsetupentry.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/orgsetupentry.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/orgyear_rotation.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/orgyear_rotation.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/resident_custom.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/resident_custom.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/resident_form.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/resident_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/resident_leave.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/resident_leave.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/resident_leave_list.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/resident_leave_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/resident_list.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/resident_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/residenttype_form.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/residenttype_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/residenttype_list.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/residenttype_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/reviewSchedules.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/reviewSchedules.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/review_schedule_run.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/review_schedule_run.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/rotation_custom.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/rotation_custom.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/rotation_form.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/rotation_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/rotation_list.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/rotation_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/rotation_schedule_block.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/rotation_schedule_block.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/rotation_schedule_resident.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/rotation_schedule_resident.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/rotation_schedule_rotation.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/rotation_schedule_rotation.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/rotation_setup.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/rotation_setup.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/rotation_type.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/rotation_type.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/rotation_type_list.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/rotation_type_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/rotationschedule_form.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/rotationschedule_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/rotationschedule_list.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/rotationschedule_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/rotationschedule_resident_list.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/rotationschedule_resident_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/rotationschedule_rotation_list.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/rotationschedule_rotation_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/sched_setup.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/sched_setup.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/session_setup.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/session_setup.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/team_setup.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/team_setup.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/teamtype_form.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/teamtype_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/teamtype_list.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/teamtype_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/unavailabletype_custom.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/unavailabletype_custom.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/unavailabletype_form.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/unavailabletype_form.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pocketbook/templates/rezsched/unavailabletype_list.html" afterPath="$PROJECT_DIR$/pocketbook/templates/pbfinancials/unavailabletype_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pbfinancials/forms.py" afterPath="$PROJECT_DIR$/pbfinancials/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pbfinancials/models.py" afterPath="$PROJECT_DIR$/pbfinancials/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pocketbook.iml" afterPath="$PROJECT_DIR$/.idea/pocketbook.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pocketbook/settings.py" afterPath="$PROJECT_DIR$/pocketbook/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pbfinancials/urls.py" afterPath="$PROJECT_DIR$/pbfinancials/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pbfinancials/views.py" afterPath="$PROJECT_DIR$/pbfinancials/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pocketbook.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574128539" ignored="false" />
-    <file path="/settings.py" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574581434" ignored="false" />
+    <file path="/settings.py" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366575117841" ignored="false" />
     <file path="/a.dummy" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574645968" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/index.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659939" ignored="false" />
-    <file path="$PROJECT_DIR$/pbfinancials/urls.py" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659772" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/base.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659942" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/home.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659941" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/base.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659939" ignored="false" />
-    <file path="$PROJECT_DIR$/pbfinancials/forms.py" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659772" ignored="false" />
-    <file path="$PROJECT_DIR$/pbfinancials/views.py" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659939" ignored="false" />
-    <file path="$PROJECT_DIR$/pbfinancials/admin.py" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659772" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/backup_html/backup_block_list.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659939" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/backup_html/backup2_sched_setup.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659939" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/backup_html/backup_sched_setup.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659939" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/backup_html/backup_rotation_setup.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659939" ignored="false" />
     <file path="$PROJECT_DIR$/pocketbook/templates/admin/base_site.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659941" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/blockresidenttypecount_list.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659941" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/block_list.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659941" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/block_custom.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659941" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/clinicscheduletype_form.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659941" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/block_type_list.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659941" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/block_type.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659942" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/clinicavailability_list.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659942" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/clinic_count.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659942" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/faculty_leave_list.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660077" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/faculty_leave.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659942" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/faculty_custom.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659942" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/faculty_form.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659943" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/clinicavailability_rotation.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659943" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/baseentry.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659943" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/clinic_count_list.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659943" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/clinicavailability_rotation_list.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659943" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/clinic_schedule_run.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659943" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/clinicscheduletype_list.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659943" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/blockresidenttypecount_form.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659943" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/clinicavailability_custom.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659943" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/clinicavailability_form.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659943" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/block_form.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574659943" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/holiday_form.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660076" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/facultyclinichours_list.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660076" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/orgyear_rotation.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660076" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/resident_custom.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660076" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/officehours_form.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660076" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/organizationyear_list.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660076" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/officehours_list.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660076" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/facultyrounding_list.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660076" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/generateSchedules.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660076" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/facultyclinichours.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660076" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/resident_leave.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660077" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/residenttype_form.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660077" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/organizationyear_form.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660077" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/orgsetupentry.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660077" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/resident_leave_list.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660077" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/residenttype_list.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660080" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/officehours_custom.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660077" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/faculty_list.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660077" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/leave_setup.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660077" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/orgsetupbase.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660077" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/resident_form.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660078" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/home.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660078" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/generateSchedulesAll.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660078" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/resident_list.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660078" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/holiday_list.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660078" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/rotationschedule_form.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660078" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/rotationschedule_list.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660078" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/rotationschedule_rotation_list.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660078" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/unavailabletype_form.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660078" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/rotation_form.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660078" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/sched_setup.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660078" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/rotation_schedule_resident.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660078" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/teamtype_list.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660078" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/review_schedule_run.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660079" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/rotation_list.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660079" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/reviewSchedules.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660079" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/teamtype_form.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660079" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/session_setup.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660079" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/rotation_type.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660079" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/rotation_setup.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660080" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/rotation_schedule_rotation.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660080" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/unavailabletype_list.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660080" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/unavailabletype_custom.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660080" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/rotation_schedule_block.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660080" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/rotationschedule_resident_list.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660080" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/rotation_custom.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660080" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/team_setup.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660080" ignored="false" />
-    <file path="$PROJECT_DIR$/pocketbook/templates/rezsched/rotation_type_list.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366574660080" ignored="false" />
+    <file path="/models.py" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366578605956" ignored="false" />
+    <file path="/urls.py" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366577668283" ignored="false" />
+    <file path="/views.py" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366577151196" ignored="false" />
+    <file path="/forms.py" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366578651379" ignored="false" />
+    <file path="/base.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366577412945" ignored="false" />
+    <file path="/account_list.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366577967033" ignored="false" />
+    <file path="/account_form.html" changelist="38877b82-d31f-436c-97a1-6558bddc294b" time="1366577892507" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,10 +120,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pocketbook/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="5" selection-start="218" selection-end="218" vertical-scroll-proportion="0.095846646">
+            <state line="9" column="16" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#43#52#0" expanded="true" />
               </folding>
@@ -236,11 +131,89 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pocketbook/urls.py">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pbfinancials/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="48" column="26" selection-start="1790" selection-end="1790" vertical-scroll-proportion="-5.181818">
+              <folding>
+                <element signature="e#1#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pbfinancials/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="28" selection-start="1549" selection-end="1549" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#29#71#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resident_list.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pocketbook/templates/pbfinancials/resident_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="1472" vertical-scroll-proportion="-0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="account_list.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pocketbook/templates/pbfinancials/account_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="111" selection-start="664" selection-end="664" vertical-scroll-proportion="-10.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resident_form.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pocketbook/templates/pbfinancials/resident_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="538" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="account_form.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pocketbook/templates/pbfinancials/account_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="34" selection-start="506" selection-end="506" vertical-scroll-proportion="-8.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pbfinancials/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="80" selection-start="1746" selection-end="1746" vertical-scroll-proportion="-11.538462">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pocketbook/templates/pbfinancials/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="242" column="77" selection-start="8523" selection-end="8523" vertical-scroll-proportion="-20.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pbfinancials/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="690" column="5" selection-start="28459" selection-end="28459" vertical-scroll-proportion="0.6828358">
+              <folding>
+                <element signature="e#29#53#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -263,9 +236,16 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/pocketbook/settings.py" />
         <option value="$PROJECT_DIR$/app.yaml" />
         <option value="$PROJECT_DIR$/other/sql/bbbbbb.sql" />
+        <option value="$PROJECT_DIR$/pocketbook/settings.py" />
+        <option value="$PROJECT_DIR$/pbfinancials/views.py" />
+        <option value="$PROJECT_DIR$/pocketbook/templates/pbfinancials/base.html" />
+        <option value="$PROJECT_DIR$/pbfinancials/urls.py" />
+        <option value="$PROJECT_DIR$/pocketbook/templates/pbfinancials/account_form.html" />
+        <option value="$PROJECT_DIR$/pocketbook/templates/pbfinancials/account_list.html" />
+        <option value="$PROJECT_DIR$/pbfinancials/models.py" />
+        <option value="$PROJECT_DIR$/pbfinancials/forms.py" />
       </list>
     </option>
   </component>
@@ -333,6 +313,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pocketbook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pocketbook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pocketbook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pocketbook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pocketbook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pocketbook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pbfinancials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pocketbook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pocketbook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pbfinancials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -342,11 +376,41 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="App Engine server.pocketbook">
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <PyConsoleSettings />
+    </option>
+    <option name="myDjangoConsoleState">
+      <PyConsoleSettings />
+    </option>
+  </component>
+  <component name="RunManager" selected="Django server.pocketbook">
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pocketbook" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="Python.AppEngineServer" factoryName="App Engine server">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -361,6 +425,46 @@
       <option name="launchJavascriptDebuger" value="false" />
       <option name="browserUrl" value="" />
       <option name="additionalOptions" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pocketbook" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pocketbook" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
@@ -412,7 +516,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/2.7/bin/python" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -427,27 +531,12 @@
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="pocketbook" type="Python.AppEngineServer" factoryName="App Engine server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pocketbook" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="browserUrl" value="" />
-      <option name="additionalOptions" value="" />
-      <method />
-    </configuration>
-    <list size="2">
+    <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Django server.pocketbook" />
-      <item index="1" class="java.lang.String" itemvalue="App Engine server.pocketbook" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -472,7 +561,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296875" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -564,11 +653,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/http/site/include/header-template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pocketbook/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="5" selection-start="218" selection-end="218" vertical-scroll-proportion="0.095846646">
+        <state line="9" column="16" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#43#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pbfinancials/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="80" selection-start="1746" selection-end="1746" vertical-scroll-proportion="-11.538462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pbfinancials/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="28" selection-start="1549" selection-end="1549" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#29#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pocketbook/templates/pbfinancials/resident_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="1472" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pocketbook/templates/pbfinancials/account_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="34" selection-start="506" selection-end="506" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pocketbook/templates/pbfinancials/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="242" column="77" selection-start="8523" selection-end="8523" vertical-scroll-proportion="-20.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pocketbook/templates/pbfinancials/account_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="111" selection-start="664" selection-end="664" vertical-scroll-proportion="-10.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pocketbook/templates/pbfinancials/resident_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="538" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pbfinancials/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="26" selection-start="1790" selection-end="1790" vertical-scroll-proportion="-5.181818">
+          <folding>
+            <element signature="e#1#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pbfinancials/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="690" column="5" selection-start="28459" selection-end="28459" vertical-scroll-proportion="0.6828358">
+          <folding>
+            <element signature="e#29#53#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -40,7 +40,7 @@ else:
             'ENGINE': 'django.db.backends.mysql',
             'NAME': 'pocketbook',
             'USER': 'root',
-            'PASSWORD': 'pbfinancials1234',
+            'PASSWORD': 'RezSched1234',
             'HOST': 'localhost',
             'PORT': '',          # Set to empty string for default. Not used with sqlite3.
         }

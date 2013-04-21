@@ -1,0 +1,40 @@
+{% extends "pbfinancials/base.html" %}
+
+{% block title %}PocketBook::Account List{% endblock %}
+
+{% block menubar %}
+    <ul>
+        <li><a href="/pbfinancials/resident/type/">Resident Types</a></li>
+        <li><a href="#" class="current">Resident Information</a></li>
+        <li><a href="/pbfinancials/resident/leave/">Resident Leave</a></li>
+    </ul>
+{% endblock  %}
+{% block header2 %}
+    <h2><strong>Account Information </strong> </h2>
+{% endblock %}
+{% block content %}
+    <h4>Current Account Listing:</h4>
+    <form method="link" action="">
+        <button type="submit" class="btn-small btn-primary" formaction="/pbfinancials/account/add/">Add Account</button>
+    </form>
+    {% if account_list %}
+        <table id="common">
+        <tr><th>Account Name</th><th>Account Number</th><th>Account Type</th><th>Budgetary Account?</th></tr>
+            {% for account in account_list %}
+                {% if forloop.counter|divisibleby:2 %}
+                    <tr class="alt">
+                {% else %}
+                    <tr>
+                {% endif %}
+                        <td><a href="/pbfinancials/account/{{ account.id }}/">{{ account.accountName }} </a></td>
+                        <td>{{ account.accountNumber }}</td>
+                        <td> {{ account.accountType }}</td>
+                        <td> {{ account.accountIsBudgetary }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No Accounts have been entered.</p>
+    {% endif %}
+{% endblock %}
+

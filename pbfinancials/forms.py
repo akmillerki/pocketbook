@@ -5,7 +5,7 @@ from pbfinancials.models import Resident, OrganizationYear, Block, Rotation, Off
     UnavailableType, ClinicAvailability, TeamType, ResidentType, ClinicScheduleType, BlockResidentTypeCount, \
     RotationSchedule, ResidentElective, BaseOrganization, StaffUnavailable, FacultyUnavailable, \
     RotationResidentType, BlockWeek, ClinicAvailabilityCount, BlockResidentType, ClinicAvailabilityBlockWeek, \
-    FacultyClinicHours
+    FacultyClinicHours, Account, Transaction
 from django.forms.models import BaseModelFormSet
 from datetime import datetime
 from services import UserOrganization, UserOrganizationYear
@@ -684,3 +684,18 @@ class FacultyClinicHoursCalendarForm(forms.ModelForm):
             'facultyRef': HiddenInput,
             'officeHrsRef': HiddenInput,
         }
+
+class AccountForm(forms.ModelForm):
+    accountName=forms.CharField(label='Account Name')
+    accountNumber=forms.CharField(label="Account Number")
+    #accountTypeRef=forms.CharField(label="Account Type")
+    #accountIsBudgetary.CharField(label="Account is Budgetary")
+
+    class Meta:
+        model = Account
+        fields = ('accountName', 'accountNumber','accountTypeRef', 'accountIsBudgetary')
+        widgets = {
+            'accountIsBudgetary': CheckboxInput, 'accountTypeRef': Select
+            }
+        exclude = ('Id','id')
+

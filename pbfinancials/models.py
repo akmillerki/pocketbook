@@ -40,6 +40,36 @@ class BaseRotations(models.Model):
     rotationDescr = models.CharField("Rotation Description", max_length=30)
 
 
+ACCT_TYPE_CHOICES= (
+    ('A', 'Asset Account'),
+    ('C', 'Credit Account')
+)
+class AccountType(models.Model):
+    accountType = models.CharField("Account Type", choices=ACCT_TYPE_CHOICES, max_length=1)
+    def __unicode__(self):
+        return unicode(self.accountType)
+
+
+
+YESNO_CHOICES = (
+    ('Y', 'Yes'),
+    ('N', 'No')
+)
+class Account(models.Model):
+    # todo link this to whichever User model we choose
+    accountName = models.CharField("Account Name", max_length=30)
+    accountNumber = models.BigIntegerField("Account Number", max_length=16)
+    accountTypeRef = models.ForeignKey('AccountType')
+    accountIsBudgetary = models.CharField("Budgetary Account", choices=YESNO_CHOICES, max_length=1)
+    def __unicode__(self):
+        return unicode(self.accountName)
+
+class Transaction(models.Model):
+    transAccount = models.ForeignKey('Account', verbose_name = "Account")
+    transAmount = models.DecimalField("Transaction Amount", max_digits=10, decimal_places=2)
+
+
+
 GRANULARITY_CHOICES = (
     ('WKY', 'Weekly'),
     ('BWK', 'Two Week'),
