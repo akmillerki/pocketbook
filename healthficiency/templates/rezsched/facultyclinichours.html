@@ -1,0 +1,76 @@
+{% extends "rezsched/baseentry.html" %}
+{% block title %}Rezsched::Clinic Faculty Availability{% endblock %}
+{{ resformset.media }}
+{% block menubar %}
+    <ul xmlns="http://www.w3.org/1999/html">
+        <li><a href="/rezsched/faculty/">Faculty Listing</a></li>
+        <li><a href="/rezsched/faculty/add/">Add/Change Faculty</a></li>
+        <li><a href="/rezsched/faculty/leave/">Faculty Leave</a></li>
+        <li><a href="#" class="current">Faculty Availability</a></li>
+    </ul>
+{% endblock  %}
+{% block header2 %}
+    <h2><strong>Faculty Setup</strong> </h2>
+{% endblock %}
+{% block content %}
+    <form method="post" action="">
+        {% csrf_token %}
+
+        {% if dispContext %}
+            <h4> Clinic Availability for Faculty:  {{ dispContext }} </h4>
+
+        {% endif %}
+        {% if formset %}
+            {{ formset.management_form }}
+            {% if dispSaveError %}
+                <p>{{ dispSaveError }}</p>
+            {% endif %}
+
+            {% if count <= 5 %}
+                <button type="submit" name="submit" class="btn-small btn-primary">Save Changes and Return</button>
+                <button type="submit" name="cancel" class="btn-small btn-primary">Cancel and Return</button>
+                <br>
+                <br>
+            {% endif %}
+
+            <table id="ca">
+                <tr><th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tuesday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wednesday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thursday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Friday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th></tr>
+                <tr><th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AM&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PM&nbsp;&nbsp;&nbsp;</th>
+                    <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AM&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PM&nbsp;&nbsp;&nbsp;</th>
+                <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AM&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PM&nbsp;&nbsp;</th>
+                <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AM&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PM&nbsp;&nbsp;&nbsp;</th>
+                    <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AM&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PM&nbsp;&nbsp;&nbsp;</th></tr>
+
+                <tr>
+
+                        {% for officeHour in officeHoursSet %}
+                            {% for form in formset %}
+                                {% if form.officeHrsRef.value == officeHour.id%}
+                                    {{ form.id }}
+                                    {% csrf_token %}
+                                    <td> &nbsp;{{ form.clinicScheduleTypeRef }} &nbsp;</td>
+                                    {{ form.organization }}
+                                    {{ form.organizationYear }}
+                                    {{ form.facultyRef }}
+                                    {{ form.officeHrsRef }}
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %}
+                    </tr>
+
+
+            </table>
+            {% if count > 5 %}
+                <br>
+                <button type="submit" name="submit" class="btn-small btn-primary">Save Changes and Return</button>
+                <button type="submit" name="cancel" class="btn-small btn-primary">Cancel and Return</button>
+            {% endif %}
+        {% endif %}
+        <br>
+
+    </form>
+{% endblock %}

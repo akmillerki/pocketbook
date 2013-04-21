@@ -1,0 +1,76 @@
+{% extends "rezsched/base.html" %}
+
+{% block title %}Rezsched::Organizational Setup{% endblock %}
+
+{% block menubar %}
+    <ul>
+        <li><a href="/rezsched/orgyear/team/" {% block generalcurrent %}{% endblock %}>Teams</a></li>
+        <li><a href="/rezsched/orgyear/schedule/" {% block schedulecurrent %}class="current"{% endblock %}>Schedules</a></li>
+        <li><a href="/rezsched/orgyear/rotation/" {% block rotationcurrent %}{% endblock %}>Rotations</a></li>
+        <li><a href="/rezsched/orgyear/session/" {% block sessioncurrent %}{% endblock %}>Sessions</a></li>
+        <li><a href="/rezsched/orgyear/leave/" {% block leavecurrent %}{% endblock %}>Leave Types</a></li>
+    </ul>
+{% endblock  %}
+
+{% block header2 %}
+    <h2><strong>Organizational Setup </strong> </h2>
+{% endblock %}
+
+{% block content %}
+
+    {% block header4 %}Organizational Year Schedule Blocks:{% endblock %}
+
+    <form method="post" action="">
+        {% csrf_token  %}
+
+        {% if formset %}
+            <table id="common">
+                {% for form in formset %}
+                    {% csrf_token  %}
+                    {% if forloop.counter|divisibleby:2 %}
+                        <tr>
+                            {% else %}
+                        <tr class="alt">
+                    {% endif %}
+                {% if forloop.counter == 1 %}
+                    {% for field in form %}
+                        {% if field.is_hidden %}
+                        {% else %}
+                            <th>{{ field.label_tag }}</th>
+                        {% endif %}
+                    {% endfor %}
+                    </tr>
+                    {% if forloop.counter|divisibleby:2 %}
+                        <tr>
+                            {% else %}
+                        <tr class="alt">
+                    {% endif %}
+                    {% for field in form %}
+                        {% if field.is_hidden %}
+
+                        {% else %}
+                            <td>{{ field }}</td>
+                        {% endif %}
+                    {% endfor %}
+                {% else %}
+                    {% for field in form %}
+                        {% if field.is_hidden %}
+
+                        {% else %}
+                            <td>{{ field }}</td>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+                </tr>
+                {% endfor %}
+            </table>
+        {% else %}
+            <p>Error retrieving information.</p>
+        {% endif %}
+        <br>
+        <button type="submit" class="btn-small btn-primary" formaction="/rezsched/orgyear/schedule/add/">Add New</button>
+        <button type="submit" class="btn-small btn-primary" formaction="/rezsched/orgyear/schedule/save/">Save Changes</button>
+        <button type="submit" class="btn-small btn-primary" formaction="/rezsched/orgyear/">Return/Cancel</button>
+    </form>
+{% endblock %}
+

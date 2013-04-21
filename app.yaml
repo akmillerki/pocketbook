@@ -1,0 +1,29 @@
+application: healthficiency
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: false
+
+inbound_services:
+- warmup
+
+libraries:
+- name: django
+  version: latest
+
+- name: PIL
+  version: latest
+
+default_expiration: "1d"
+
+handlers:
+- url: /.*
+  script: main.app
+- url: /tasks/clinic/schedule
+  script: generate.app
+  login: admin
+
+builtins:
+- django_wsgi: on
+- remote_api: on
+- appstats: on

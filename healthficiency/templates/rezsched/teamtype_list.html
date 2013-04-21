@@ -1,0 +1,41 @@
+{% extends "rezsched/orgsetupbase.html" %}
+
+{% block academiccurrent %}{% endblock %}
+{% block generalcurrent %}class="current"{% endblock %}
+{% block schedulecurrent %}{% endblock %}
+{% block rotationcurrent %}{% endblock %}
+{% block sessioncurrent %}{% endblock %}
+{% block leavecurrent %}{% endblock %}
+
+{% block header2 %}
+    <h2><strong>Academic Year Setup </strong> </h2>
+{% endblock %}
+
+{% block content %}
+    <h4>Current Team Listing:</h4>
+
+    <form method="post" action=".">
+        {% csrf_token %}
+        <button type="submit" class="btn-small btn-primary" formaction="/rezsched/orgyear/team/add/">Add New</button>
+        <button type="submit" class="btn-small btn-primary" formaction="/rezsched/orgyear/">Return/Cancel</button>
+    </form>
+    {% if orgyearteamsetup_list %}
+        <table id="common">
+            <tr><th>Code</th><th>Description</th></tr>
+            {% for team in orgyearteamsetup_list %}
+                {% if forloop.counter|divisibleby:2 %}
+                    <tr class="alt">
+                        {% else %}
+                    <tr>
+                {% endif %}
+            <td><a href="/rezsched/orgyear/team/{{ team.id }}/">{{ team.shortDesc}} </a></td>
+            <td>{{ team.description }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No Teams have been entered.</p>
+    {% endif %}
+
+
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends "rezsched/orgsetupbase.html" %}
+
+{% block generalcurrent %}{% endblock %}
+{% block schedulecurrent %}class="current"{% endblock %}
+{% block rotationcurrent %}{% endblock %}
+{% block sessioncurrent %}{% endblock %}
+{% block leavecurrent %}{% endblock %}
+
+{% block content %}
+    {% block header4 %}<p>Organizational Year Schedules:</p>{% endblock %}
+
+    <form method="post" action="">
+
+        {% csrf_token  %}
+
+        <table id="common">
+
+            {% for form in formset %}
+                {% if forloop.counter|divisibleby:2 %}
+                    <tr>
+                        {% else %}
+                    <tr class="alt">
+                {% endif %}
+            {% if forloop.counter == 1 %}
+                {% for field in form %}
+                    {% if field.is_hidden %}
+
+                    {% else %}
+                        <th>{{ field.label_tag }}</th>
+                    {% endif %}
+                {% endfor %}
+                </tr>
+                {% if forloop.counter|divisibleby:2 %}
+                    <tr>
+                        {% else %}
+                    <tr class="alt">
+                {% endif %}
+                {% for field in form %}
+                    {% if field.is_hidden %}
+
+                    {% else %}
+                        <td>{{ field }}</td>
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+                {% for field in form %}
+                    {% if field.is_hidden %}
+
+                    {% else %}
+                        <td>{{ field }}</td>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+            </tr>
+            {% endfor %}
+        </table>
+        <br>
+        <button type="submit" class="btn-small btn-primary">Save Changes</button>
+        <button type="reset" class="btn-small">Reset Fields</button>
+    </form>
+{% endblock %}

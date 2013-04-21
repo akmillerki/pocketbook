@@ -1,0 +1,47 @@
+{% extends "rezsched/orgsetupbase.html" %}
+
+{% block title %}Rezsched::Academic Year Setup{% endblock %}
+
+{% block academiccurrent %}{% endblock %}
+{% block generalcurrent %}{% endblock %}
+{% block schedulecurrent %}class="current"{% endblock %}
+{% block rotationcurrent %}{% endblock %}
+{% block sessioncurrent %}{% endblock %}
+{% block leavecurrent %}{% endblock %}
+
+{% block header2 %}
+    <h2><strong>Academic Year Setup </strong> </h2>
+{% endblock %}
+
+{% block content %}
+    <h4>Current Block Listing:</h4>
+
+    <form method="post" action=".">
+        {% csrf_token %}
+        <button type="submit" class="btn-small btn-primary" formaction="/rezsched/orgyear/schedule/add/">Add New</button>&nbsp;
+        <button type="submit" class="btn-small btn-primary" formaction="/rezsched/orgyear/">Return/Cancel</button>
+
+    </form>
+
+    {% if blockset %}
+        <table id="common">
+            <tr><th>Block Code</th><th>Block Description</th></tr>
+            {% for block in blockset %}
+                {% if forloop.counter|divisibleby:2 %}
+                    <tr class="alt">
+                        {% else %}
+                    <tr>
+                {% endif %}
+            <td><a href="/rezsched/orgyear/schedule/{{ block.id }}/">{{ block.code }} </a></td>
+            <td>{{ block.description }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No Blocks have been entered.</p>
+    {% endif %}
+    <br>
+
+
+{% endblock %}
+

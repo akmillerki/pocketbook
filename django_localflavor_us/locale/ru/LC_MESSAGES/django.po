@@ -1,0 +1,49 @@
+# This file is distributed under the same license as the Django package.
+# 
+# Translators:
+# Denis Darii <sinednx@gmail.com>, 2011.
+# Jannis Leidel <jannis@leidel.info>, 2011.
+# Michael Bashkirov <michael.bashkirov@gmail.com>, 2011.
+# Алексей Борискин <sun.void@gmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: django-localflavor-us\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-12-20 16:42-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Алексей Борискин <sun.void@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: forms.py:21
+msgid "Enter a zip code in the format XXXXX or XXXXX-XXXX."
+msgstr "Введите почтовый индекс в формате XXXXX или XXXXX-XXXX."
+
+#: forms.py:30
+msgid "Phone numbers must be in XXX-XXX-XXXX format."
+msgstr "Телефонные номера должны быть в формате XXX-XXX-XXXX."
+
+#: forms.py:59
+msgid "Enter a valid U.S. Social Security number in XXX-XX-XXXX format."
+msgstr ""
+"Введите правильный номер социального страхования США в формате XXX-XX-XXXX."
+
+#: forms.py:92
+msgid "Enter a U.S. state or territory."
+msgstr "Введите штат или территорию США"
+
+#: models.py:8
+msgid "U.S. state (two uppercase letters)"
+msgstr "Штат США (две заглавные буквы)"
+
+#: models.py:17
+msgid "U.S. postal code (two uppercase letters)"
+msgstr "Американский индекс (две заглавные буквы)"
+
+#: models.py:26
+msgid "Phone number"
+msgstr "Номер телефона"

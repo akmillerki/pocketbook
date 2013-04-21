@@ -1,0 +1,65 @@
+{
+	"name": "ui.effect-blind",
+	"title": "jQuery UI Blind Effect",
+	"description": "Blinds the element.",
+	"keywords": [
+		"ui",
+		"blind",
+		"effect",
+		"show",
+		"hide"
+	],
+	"version": "1.10.0",
+	"author": {
+		"name": "jQuery Foundation and other contributors",
+		"url": "https://github.com/jquery/jquery-ui/blob/1.10.0/AUTHORS.txt"
+	},
+	"maintainers": [
+		{
+			"name": "Scott González",
+			"email": "scott.gonzalez@gmail.com",
+			"url": "static://scottgonzalez.com"
+		},
+		{
+			"name": "Jörn Zaefferer",
+			"email": "joern.zaefferer@gmail.com",
+			"url": "static://bassistance.de"
+		},
+		{
+			"name": "Kris Borchers",
+			"email": "kris.borchers@gmail.com",
+			"url": "static://krisborchers.com"
+		},
+		{
+			"name": "Corey Frang",
+			"email": "gnarf37@gmail.com",
+			"url": "static://gnarf.net"
+		},
+		{
+			"name": "Mike Sherov",
+			"email": "mike.sherov@gmail.com",
+			"url": "static://mike.sherov.com"
+		},
+		{
+			"name": "TJ VanToll",
+			"email": "tj.vantoll@gmail.com",
+			"url": "static://tjvantoll.com"
+		}
+	],
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://github.com/jquery/jquery-ui/blob/1.10.0/MIT-LICENSE.txt"
+		}
+	],
+	"bugs": "static://bugs.jqueryui.com/",
+	"homepage": "static://jqueryui.com/blind-effect/",
+	"demo": "static://jqueryui.com/blind-effect/",
+	"docs": "static://api.jqueryui.com/blind-effect/",
+	"download": "static://jqueryui.com/download/",
+	"dependencies": {
+		"jquery": ">=1.6",
+		"ui.effect": "1.10.0"
+	},
+	"category": "effect"
+}

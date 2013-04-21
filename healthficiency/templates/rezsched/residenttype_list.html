@@ -1,0 +1,36 @@
+{% extends "rezsched/orgsetupbase.html" %}
+
+{% block academiccurrent %}{% endblock %}
+{% block generalcurrent %}{% endblock %}
+{% block schedulecurrent %}{% endblock %}
+{% block rotationcurrent %}class="current"{% endblock %}
+{% block sessioncurrent %}{% endblock %}
+{% block leavecurrent %}{% endblock %}
+
+
+{% block header2 %}
+    <h2><strong>Academic Year Setup</strong> </h2>
+{% endblock %}
+{% block content %}
+    <h4>Current Rotation Listing:</h4>
+    <form method="link" action="">
+        <button type="submit" class="btn-small btn-primary" formaction="/rezsched/resident/type/add/">Add Resident Type</button>
+    </form>
+    {% if residenttype_list %}
+        <table id="common">
+            <tr><th>Rotation Abbreviation</th><th>Rotation Description</th></tr>
+            {% for residenttype in residenttype_list %}
+                {% if forloop.counter|divisibleby:2 %}
+                    <tr class="alt">
+                        {% else %}
+                    <tr>
+                {% endif %}
+            <td><a href="/rezsched/resident/type/{{ residenttype.id }}/">{{ residenttype.shortDesc }} </a></td>
+            <td>{{ residenttype.description }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No Residents have been entered.</p>
+    {% endif %}
+{% endblock %}

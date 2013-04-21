@@ -1,0 +1,50 @@
+# This file is distributed under the same license as the Django package.
+# 
+# Translators:
+# Christian Joergensen <christian@gmta.info>, 2012.
+# Erik Wognsen <r4mses@gmail.com>, 2012.
+# Finn Gruwier <finn@gruwier.dk>, 2011.
+# Jannis Leidel <jannis@leidel.info>, 2011.
+#   <kristian@oellegaard.com>, 2012.
+# Kristian Øllegaard <kristian@oellegaard.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: django-localflavor-us\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-12-20 16:42-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Erik Wognsen <r4mses@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: forms.py:21
+msgid "Enter a zip code in the format XXXXX or XXXXX-XXXX."
+msgstr "Indtast et postnr. i format XXXXX eller XXXXX-XXXX."
+
+#: forms.py:30
+msgid "Phone numbers must be in XXX-XXX-XXXX format."
+msgstr "Telefonnumre skal være i formatet XXX-XXX-XXXX."
+
+#: forms.py:59
+msgid "Enter a valid U.S. Social Security number in XXX-XX-XXXX format."
+msgstr "Indtast et gyldigt U. S sygesikringsnummer i format XXX-XX-XXXX."
+
+#: forms.py:92
+msgid "Enter a U.S. state or territory."
+msgstr "Indtast en amerikansk stat."
+
+#: models.py:8
+msgid "U.S. state (two uppercase letters)"
+msgstr "Stat (i USA, to store bogstaver)"
+
+#: models.py:17
+msgid "U.S. postal code (two uppercase letters)"
+msgstr "USA-postnummer (to store bogstaver)"
+
+#: models.py:26
+msgid "Phone number"
+msgstr "Telefonnummer"

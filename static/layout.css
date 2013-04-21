@@ -1,0 +1,27 @@
+.col1, .col2, .col-1, .col-2, .col-3, .col-4{ float:left}
+/*======= width =======*/
+.main{margin:0 auto; text-align:left; width:890px; }
+
+/*======= header =======*/
+#header {height:177px;  background:url(images/top.gif) top center no-repeat}
+
+#content .col1{ width:268px; margin-right:31px}
+#content .col2{ width:550px}
+/*======= index.html =======*/
+#page1 #content .col-1{ width:261px; margin-right:26px}
+#page1 #content .col-2{ width:261px} 
+/*======= index-1.html =======*/
+#page2 #content .col-1{ width:261px; margin-right:26px}
+#page2 #content .col-2{ width:261px}
+/*======= index-2.html =======*/
+#page3 #content .col-1{ width:261px; margin-right:26px}
+#page3 #content .col-2{ width:261px}  
+/*======= index-4.html =======*/
+#page5 #content .col-1{ width:261px; margin-right:26px}
+#page5 #content .col-2{ width:261px} 
+/*======= index-5.html =======*/
+#page6 #content .col-1{ width:261px; margin-right:26px}
+#page6 #content .col-2{ width:261px}  
+
+/*======= footer =======*/
+#footer { height:130px; }

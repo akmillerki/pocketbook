@@ -1,0 +1,36 @@
+{% extends "rezsched/base.html" %}
+{% block title %}Rezsched::Generate Schedules{% endblock %}
+
+{% block menubar %}
+    <ul>
+        <li><a href="#">Yearly Setup</a></li>
+        <li><a href="#" class="current">Clinic Schedule</a></li>
+        <li><a href="#">Rotation Schedule</a></li>
+    </ul>
+{% endblock  %}
+
+{% block content %}
+    <h2>Clinic Schedules</h2>
+    {% if items %}
+        <table id="common">
+            <tr><th>Resident</th><th>Rotation</th><th>Team</th><th>MON-AM</th><th>MON-PM</th>
+            <th>TUE-AM</th><th>TUE-PM</th><th>WED-AM</th><th>WED-PM</th><th>THU-AM</th><th>THU-PM</th><th>FRI-AM</th><th>FRI-PM</th></tr>
+            {% for item in items %}
+                {% if forloop.counter|divisibleby:2 %}
+                    <tr class="alt">
+                        {% else %}
+                    <tr>
+                {% endif %}
+            <td>{{ item.name }}</td><td>{{ item.rotation}}</td>
+            <td>{{ item.team }}</td>
+                <td>{{ item.monAM }}</td> <td>{{ item.monPM }}</td><td>{{ item.tueAM }}</td> <td>{{ item.tuePM }}</td>
+            <td>{{ item.wedAM }}</td> <td>{{ item.wedPM }}</td><td>{{ item.thuAM }}</td> <td>{{ item.thuPM }}</td>
+            <td>{{ item.friAM }}</td> <td>{{ item.friPM }}</td>
+
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>{{ items }}</p>
+    {% endif %}
+{% endblock %}

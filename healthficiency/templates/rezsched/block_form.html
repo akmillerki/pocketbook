@@ -1,0 +1,31 @@
+{% extends "rezsched/orgsetupentry.html" %}
+
+{% block academiccurrent %}{% endblock %}
+{% block generalcurrent %}{% endblock %}
+{% block schedulecurrent %}class="current"{% endblock %}
+{% block rotationcurrent %}{% endblock %}
+{% block sessioncurrent %}{% endblock %}
+{% block leavecurrent %}{% endblock %}
+
+{% block title %}Rezsched::Academic Year Setup{% endblock %}
+
+{% block jsquery-dates %}
+    <script>
+        $(function() {
+            $( "#id_sDateBeg" ).datepicker();
+        });
+    </script>
+    <script>
+        $(function() {
+            $( "#id_sDateEnd" ).datepicker();
+        });
+    </script>
+
+{% endblock  %}
+
+{% block header2 %}
+    <h2><strong> Academic Year Setup </strong> </h2>
+{% endblock %}
+
+{% block header4 %} Modify Schedule Block Info {% endblock  %}
+

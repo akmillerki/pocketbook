@@ -1,0 +1,49 @@
+# This file is distributed under the same license as the Django package.
+# 
+# Translators:
+# angularcircle <angular.circle@gmail.com>, 2011.
+#   <angular.circle@gmail.com>, 2012.
+# Jannis Leidel <jannis@leidel.info>, 2011.
+# konryd <konryd@gmail.com>, 2011.
+# Roman Barczyński <rombar@gmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: django-localflavor-us\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-12-20 16:42-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Roman Barczyński <rombar@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: forms.py:21
+msgid "Enter a zip code in the format XXXXX or XXXXX-XXXX."
+msgstr "Wpisz kod pocztowy w formacie XXXXX. lub XXXXX-XXXX."
+
+#: forms.py:30
+msgid "Phone numbers must be in XXX-XXX-XXXX format."
+msgstr "Numery telefoniczne muszą być w formacie XXX-XXX-XXXX."
+
+#: forms.py:59
+msgid "Enter a valid U.S. Social Security number in XXX-XX-XXXX format."
+msgstr "Wpisz poprawny numer U.S. Social Security w formacie XXX-XX-XXXX."
+
+#: forms.py:92
+msgid "Enter a U.S. state or territory."
+msgstr "Podaj stan lub terytorium USA."
+
+#: models.py:8
+msgid "U.S. state (two uppercase letters)"
+msgstr "Stan USA (dwie duże litery)"
+
+#: models.py:17
+msgid "U.S. postal code (two uppercase letters)"
+msgstr "Kod pocztowy USA (dwie duże litery)"
+
+#: models.py:26
+msgid "Phone number"
+msgstr "Numer telefonu"

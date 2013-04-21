@@ -1,0 +1,51 @@
+# This file is distributed under the same license as the Django package.
+# 
+# Translators:
+# Denis Darii <sinednx@gmail.com>, 2011.
+# Jannis Leidel <jannis@leidel.info>, 2011.
+#   <lukefiltroman@gmail.com>, 2011.
+# Nicola Larosa <transifex@teknico.net>, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: django-localflavor-us\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-12-20 16:42-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Nicola Larosa <transifex@teknico.net>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: forms.py:21
+msgid "Enter a zip code in the format XXXXX or XXXXX-XXXX."
+msgstr "Inserisci un codice postale nel formato XXXXX o XXXXX-XXXX ."
+
+#: forms.py:30
+msgid "Phone numbers must be in XXX-XXX-XXXX format."
+msgstr "I numeri di telefono devono essere in formato XXX-XXX-XXXX ."
+
+#: forms.py:59
+msgid "Enter a valid U.S. Social Security number in XXX-XX-XXXX format."
+msgstr ""
+"Inserisci un numero di assistenza sociale USA valido, nel formato XXX-XX-"
+"XXXX ."
+
+#: forms.py:92
+msgid "Enter a U.S. state or territory."
+msgstr "Inserisci uno stato o territorio USA."
+
+#: models.py:8
+msgid "U.S. state (two uppercase letters)"
+msgstr "Stato USA (due lettere maiuscole)"
+
+#: models.py:17
+msgid "U.S. postal code (two uppercase letters)"
+msgstr ""
+"Codice di avviamento postale degli Stati Uniti (due lettere maiuscole)"
+
+#: models.py:26
+msgid "Phone number"
+msgstr "Numero di telefono"

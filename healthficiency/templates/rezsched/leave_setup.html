@@ -1,0 +1,42 @@
+{% extends "rezsched/orgsetupbase.html" %}
+
+{% block generalcurrent %}{% endblock %}
+{% block schedulecurrent %}{% endblock %}
+{% block rotationcurrent %}{% endblock %}
+{% block sessioncurrent %}{% endblock %}
+{% block leavecurrent %}class="current"{% endblock %}
+
+{% block content %}
+    {% block header4 %}<p>Organizational Year Leave/PTO Types:</p>{% endblock %}
+
+
+    {% if schedLeaveType %}
+        <table id="common">
+            <tr><th>Leave Type Name</th><th>Active for Year?</th></tr>
+
+            {% for item in schedLeaveType %}
+                {% if item.itemName == "UnavailableType" %}
+                    {% if forloop.counter|divisibleby:2 %}
+                        <tr class="alt">
+                            {% else %}
+                        <tr>
+                    {% endif %}
+                <td>{{ item.description }}</td><td> <input type="checkbox" name="{{ item.description }}" {% if item.leaveActive == "Y" %}checked=true {% else %} checked=false {% endif %} id="{{ item.description }}" value="{{ item.description }}"></td></tr>
+                {% else %}
+
+                {% endif %}
+
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>Error retrieving information.</p>
+    {% endif %}
+<br>
+    <form method="link" action="">
+        {% csrf_token  %}
+        <button type="submit" class="btn-small btn-primary" formaction="/rezsched/orgyear/leave/add/">Add New</button>
+        <button type="submit" class="btn-small btn-primary" formaction="/rezsched/orgyear/leave/save/">Save Changes</button>
+        <button type="submit" class="btn-small btn-primary" formaction="/rezsched/orgyear/">Return/Cancel</button>
+
+    </form>
+{% endblock %}

@@ -1,0 +1,88 @@
+{% extends "rezsched/baseentry.html" %}
+{% block title %}Rezsched::Clinic Availability by Rotation{% endblock %}
+{{ resformset.media }}
+{% block menubar %}
+    <ul xmlns="http://www.w3.org/1999/html">
+        <li><a href="#" class="current">Clinic Availability</a></li>
+    </ul>
+{% endblock  %}
+{% block header2 %}
+    <h2><strong>Clinic Setup</strong> </h2>
+{% endblock %}
+{% block content %}
+    <form method="post" action="">
+        {% csrf_token %}
+
+        {% if dispContext %}
+            <h4> Clinic Availability for Rotation:  {{ dispContext }} </h4>
+
+        {% endif %}
+        {% if formset %}
+            {{ formset.management_form }}
+            {{ cacFormSet.management_form }}
+            {% if dispSaveError %}
+                <p>{{ dispSaveError }}</p>
+            {% endif %}
+
+            {% if count <= 5 %}
+                <button type="submit" name="submit" class="btn-small btn-primary">Save Changes and Return</button>
+                <button type="submit" name="cancel" class="btn-small btn-primary">Cancel and Return</button>
+                <br>
+                <br>
+            {% endif %}
+
+            <table id="ca">
+                <tr><th >Resident Type</th><th>Session Count</th><th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tuesday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wednesday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thursday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Friday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th></tr>
+                <tr><th>&nbsp;&nbsp;</th><th>&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;AM&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;PM&nbsp;&nbsp;&nbsp;</th>
+                    <th>&nbsp;&nbsp;&nbsp;AM&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;PM&nbsp;&nbsp;&nbsp;</th>
+                <th>&nbsp;&nbsp;&nbsp;AM&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;PM&nbsp;&nbsp;</th>
+                <th>&nbsp;&nbsp;&nbsp;AM&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;PM&nbsp;&nbsp;&nbsp;</th>
+                    <th>&nbsp;&nbsp;&nbsp;AM&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;PM&nbsp;&nbsp;&nbsp;</th></tr>
+
+                {% for resType in residentTypeSet  %}
+                    <tr>
+                        <th>{{ resType.shortDesc }}</th>
+                        {% for cacForm in cacFormSet %}
+                            {% if resType.id == cacForm.residentTypeRef.value %}
+                                {{ cacForm.id }}
+                                {% csrf_token %}
+                                <td>{{ cacForm.weeklySessions }}</td>
+                                {{ cacForm.organization }}
+                                {{ cacForm.organizationYear }}
+                                {{ cacForm.residentTypeRef }}
+                                {{ cacForm.rotationRef }}
+                            {% endif %}
+                        {% endfor %}
+
+                        {% for officeHour in officeHoursSet %}
+                            {% for form in formset %}
+                                {% if form.officeHrsRef.value == officeHour.id and form.residentTypeRef.value == resType.id %}
+                                    {{ form.id }}
+                                    {% csrf_token %}
+                                    <td> &nbsp;{{ form.clinicScheduleTypeRef }} &nbsp;</td>
+                                    {{ form.organization }}
+                                    {{ form.organizationYear }}
+                                    {{ form.residentTypeRef }}
+                                    {{ form.officeHrsRef }}
+                                    {{ form.rotationRef }}
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+
+            </table>
+            {% if count > 5 %}
+                <br>
+                <button type="submit" name="submit" class="btn-small btn-primary">Save Changes and Return</button>
+                <button type="submit" name="cancel" class="btn-small btn-primary">Cancel and Return</button>
+            {% endif %}
+        {% endif %}
+        <br>
+
+    </form>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "rezsched/base.html" %}
+
+{% block title %}Rezsched::Resident Processing{% endblock %}
+
+{% block menubar %}
+    <ul>
+        <li><a href="#"  class="current">Resident Setup</a></li>
+        <li><a href="#">Resident Electives</a></li>
+        <li><a href="#">Resident PTO</a></li>
+    </ul>
+{% endblock  %}
+
+{% block content %}
+    <p><h4> {% block header4 %}Modify Object Info{% endblock %}</h4>
+
+    <form autocomplete="off" method="post" action=".">
+    {% block deletebutton %}
+        <br><br>
+    {% endblock %}
+        {% csrf_token  %}
+        <table id="entry-form">
+            {{ form.as_table }}
+        </table>
+        <br>
+        <button type="submit" class="btn-small btn-primary">Save Changes</button>
+
+    </form>
+{% endblock %}
